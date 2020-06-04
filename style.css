@@ -1,0 +1,16 @@
+h1{
+    font-size: 25px;
+}
+
+body{
+    font-family: 'Roboto Mono', monospace;
+}
+
+.padding-top{
+    padding-top: 20px;
+}
+
+.padding-top-10{
+    padding-top: 10px;
+}
+

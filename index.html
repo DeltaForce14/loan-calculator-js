@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+     <!-- Roboto Font-->
+     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="style.css">
+    <title>Loan Calculator</title>
+  </head>
+  <body class="bg-secondary text-black">
+    <div class="container">
+        <div class="row">
+            <!-- 6 columns, mx-auto = margin auto, put in the middle  -->
+            <div class="col-md-6 mx-auto">
+                <!-- mt adds margin  -->
+                <div class="card mt-5">
+                    <div class="card-body text-center">
+                        <h1 class="heading">Loan Calculator</h1>
+                    
+
+                    <form id="loan-form">  
+                        <div class="form-group pt-4">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">£</div>
+                              </div>
+                              <input type="number" class="form-control" id="loan-amount-input" placeholder="Loan Amount">
+                            </div>
+                        </div>
+                        
+
+
+                        <div class="form-group">
+                            <div class="input-group">
+                              <div class="input-group-prepend">
+                                <div class="input-group-text">%</div>
+                              </div>
+                              <input type="text" class="form-control" id="interest-amount-input" placeholder="Interest">
+                            </div>
+                        </div>
+
+
+                        <div class="form-group">
+                                <input type="number" class="form-control" id="payment-years" placeholder="Payment Years">
+                        </div>
+                        <div class="padding-top">
+                            <input type="submit" id="calculate-btn" value="Calculate" class="btn btn-dark btn-block">
+                        </div>
+                    </form>
+
+
+                        <!-- Loader 
+
+                    <div id="loading">
+                        <img src="img/loading.gif" alt="">
+                    </div>
+                    -->
+
+                        <!-- Results-->
+
+                    <div id="results">
+                        <h5 class="padding-top">Results</h5>
+                        <div class="form-group padding-top-10">
+                            <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Monthly Payments</div>
+                            </div>
+                            <!-- Disabled used to disable input -->
+                            <input type="number" class="form-control" id="monthly-pay" placeholder="" disabled>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="input-group">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">Total Payment</div>
+                            </div>
+                            <!-- Disabled used to disable input -->
+                            <input type="number" class="form-control" id="total-pay" placeholder="" disabled>
+                        </div>
+
+
+                    </div>
+
+                    <div class="form-group">
+                        <div class="input-group">
+                        <div class="input-group-prepend">
+                            <div class="input-group-text">Total Interest</div>
+                        </div>
+                        <!-- Disabled used to disable input -->
+                        <input type="number" class="form-control" id="total-interest" placeholder="" disabled>
+                    </div>
+                    
+                    </div>
+
+                </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="app.js"></script>
+  </body>
+</html>
