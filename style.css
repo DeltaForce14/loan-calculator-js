@@ -14,3 +14,7 @@ body{
     padding-top: 10px;
 }
 
+/* Using CSS to hide results and loading image */
+#loading , #results {
+    display:none;
+}
